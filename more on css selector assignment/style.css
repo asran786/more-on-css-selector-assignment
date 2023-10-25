@@ -1,0 +1,52 @@
+ul li a{
+    color: rgb(0, 0, 0);
+}
+/* Target only the first <h2> tag and change the text and background color using the combinator selectol */
+nav>h2{
+    color:brown;
+    background-color: aqua;
+}
+/* _ Also, select the first <p> tag and change the text color to red._ Also, select the first <p> tag and change the text color to red. */
+p:first-of-type{
+    color: red;
+ }
+/* 
+ B.
+ target the anchor tag with attribute "href" and change color to red and remove the text underline¢ */
+a[href]{
+    color: red;
+    text-decoration: none;
+}
+
+/* Target the anchor tag with the attribute of class name active”, change the text color, and provide the text 
+ style properties with underlining */
+ .active{
+    color: rgb(0, 0, 0) !important;
+    text-decoration: underline !important;
+ }
+ /* Target the anchor tag with the attribute of the target whose value is _self” and change the background
+color. */
+a[target="_self"]{
+    background-color: blueviolet;
+}
+
+/* D.
+Target the last <p> tag and add ...” i.e. three dots after its valuÆ */
+
+p:last-child::after{
+content: "...";
+}
+
+/* Target the list of bullet points and change the color of the bullet points without changing the list item's value */
+li::marker{
+    color: rgb(0, 131, 245);
+}
+
+/* Among the three <p> tags target the 2nd <p> tag, select the first letter of the second <p> tag, and change the
+color to red Also increase the font size to 30px */
+p:nth-child(even)::first-letter{
+    color: red;
+    font-size: 30px;
+}
+
+  
